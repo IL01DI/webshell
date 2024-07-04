@@ -14,20 +14,14 @@
   "repoLink": "https://github.com/nasan016/webshell",
   "social": {
     "email": "your@email.com",
-    "github": "yourgithub",
-    "linkedin": "you"
+    "github": "IL01DI"
   },
   "aboutGreeting": "Hi stranger. Welcome to WebShell.",
   "projects": [
     [
-      "GofeR",
-      "Vue.js reactivity in Go.",
-      "https://github.com/nasan016/gofer"
-    ],
-    [
       "WebShell",
       "Terminal styled website.",
-      "https://github.com/nasan016/webshell"
+      "https://github.com/IL01DI/webshell"
     ]
   ],
   "colors": {
