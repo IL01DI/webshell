@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1812c175-f2f1-4cbd-b402-aac5d2c12dbe/deploy-status)](https://app.netlify.com/sites/l01d/deploys)
 # [WebShell | Terminal Portfolio Website](https://webshellx.vercel.app/)
 
 <div align="center">
