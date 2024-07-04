@@ -7,7 +7,6 @@ const createAbout = () : string[] => {
 
   const EMAIL = "Email";
   const GITHUB = "Github";
-  const LINKEDIN = "Linkedin";
   
   const email = `<i class='fa-solid fa-envelope'></i> ${EMAIL}`;   
   const github = `<i class='fa-brands fa-github'></i> ${GITHUB}`;
@@ -27,13 +26,6 @@ const createAbout = () : string[] => {
   string += github;
   string += SPACE.repeat(17 - GITHUB.length);
   string += `<a target='_blank' href='https://github.com/${command.social.github}'>github/${command.social.github}</a>`;
-  about.push(string);
-
-  string = '';
-  string += SPACE.repeat(2);
-  string += linkedin;
-  string += SPACE.repeat(17 - LINKEDIN.length);  
-  string += `<a target='_blank' href='https://www.linkedin.com/in/${command.social.linkedin}'>linkedin/${command.social.linkedin}</a>`;
   about.push(string);
 
   about.push("<br>");
