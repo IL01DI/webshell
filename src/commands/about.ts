@@ -11,7 +11,6 @@ const createAbout = () : string[] => {
   
   const email = `<i class='fa-solid fa-envelope'></i> ${EMAIL}`;   
   const github = `<i class='fa-brands fa-github'></i> ${GITHUB}`;
-  const linkedin = `<i class='fa-brands fa-linkedin'></i> ${LINKEDIN}`;
   let string = "";
 
   about.push("<br>");
