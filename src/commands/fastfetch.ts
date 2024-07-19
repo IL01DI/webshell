@@ -23,7 +23,7 @@ ascii = [
     "                                          Memory: 15,32 GiB",
     "                                          Swap: 8,00 GiB",
     "                                          Disk (/): 97,64 GiB s",
-    "                                          Locale: en_GB.UTF-8""
+    "                                          Locale: en_GB.UTF-8"
 ]
 
 const createFetch = () : string[] => {
