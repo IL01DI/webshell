@@ -1,4 +1,4 @@
-ascii = [
+ascii : [
     "l01d@fedora:~$ fastfetch",
     "             .',;::::;,'.                 l01d@fedora",
     "         .';:cccccccccccc:;,.             -----------",
