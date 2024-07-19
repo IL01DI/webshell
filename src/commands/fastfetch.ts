@@ -37,5 +37,5 @@ const createFetch = () : string[] => {
     return fetch;
   }
   
-  export const DEFAULT = createFetch();
+  export const FETCH = createFetch();
   
