@@ -22,15 +22,13 @@ const createFetch = () : string[] => {
     fetch.push(":ccccccccccccccccccccccc:;,..             CPU: 11th Gen Intel(R) Core(TM) i7-11z");
     fetch.push(" ':cccccccccccccccc::;,.                  GPU 1: Intel Iris Xe Graphics @ 1,35 ]");
     fetch.push("                                          GPU 2: NVIDIA GeForce GTX 1650 Mobile]");
-    fetch.push("                                          Memory: 15,32 GiB")
-    fetch.push("                                          Swap: 8,00 GiB")
-    fetch.push("                                          Disk (/): 97,64 GiB s")
-    fetch.push("                                          Locale: en_GB.UTF-8")
-
-    )
+    fetch.push("                                          Memory: 15,32 GiB");
+    fetch.push("                                          Swap: 8,00 GiB");
+    fetch.push("                                          Disk (/): 97,64 GiB s");
+    fetch.push("                                          Locale: en_GB.UTF-8");
     fetch.push("<br>");
     return fetch
   }
-  
+ 
   export const fetch = createFetch();
   
