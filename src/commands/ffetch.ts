@@ -17,9 +17,6 @@ const createFetch = () : string[] => {
       let eleToPush = `<pre>${fetchString}</pre>`;
       fetch.push(eleToPush);
     });      
-      let eleToPush = `<pre>${fetchString}</pre>`;
-      fetch.push(eleToPush);
-    });
     return fetch;
   }
   
