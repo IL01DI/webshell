@@ -48,6 +48,6 @@ const createFetch = () : string[] => {
     return fetch;
   }
   
-  export const fetch = createFetch();
+  export const FETCH = createFetch();
   
   
