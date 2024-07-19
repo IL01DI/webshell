@@ -286,7 +286,7 @@ function commandHandler(input : string) {
       break;
     }
     case 'neofetch': {
-      writeLines(PFETCH)
+      writeLines(NFETCH)
       break;
     }  
     default:

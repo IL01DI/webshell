@@ -20,6 +20,6 @@ const createFetch = () : string[] => {
     return fetch;
   }
   
-  export const PFETCH = createFetch();
+  export const NFETCH = createFetch();
   
   
