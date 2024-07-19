@@ -1,41 +1,56 @@
+ascii = [
+    "l01d@fedora:~$ fastfetch",
+    "             .',;::::;,'.                 l01d@fedora",
+    "         .';:cccccccccccc:;,.             -----------",
+    "      .;cccccccccccccccccccccc;.          OS: Fedora Linux 40 (Workstation Edition)",
+    "    .:cccccccccccccccccccccccccc:.        Host: Prestige 14 A11SCX (REV:1.0)",
+    "  .;ccccccccccccc;.:dddl:.;ccccccc;.      Kernel: Linux 6.9.9-200.fc40.x86_64",
+    " .:ccccccccccccc;OWMKOOXMWd;ccccccc:.     Packages: 2046 (rpm), 3 (flatpak)",
+    ".:ccccccccccccc;KMMc;cc;xMMc;ccccccc:.    Shell: bash 5.2.26",
+    ",cccccccccccccc;MMM.;cc;;WW:;cccccccc,    Display (BOE06DF): 1920x1080 @ 60Hz []",
+    ":cccccccccccccc;MMM.;cccccccccccccccc:    DE: GNOME 46.3.1",
+    ":ccccccc;oxOOOo;MMM000k.;cccccccccccc:    WM: Mutter (Wayland)",
+    "cccccc;0MMKxdd:;MMMkddc.;cccccccccccc;    WM Theme: Adwaita",
+    "ccccc;XMO';cccc;MMM.;cccccccccccccccc'    Theme: Adwaita [GTK2/3/4]",
+    "ccccc;MMo;ccccc;MMW.;ccccccccccccccc;     Icons: Adwaita [GTK2/3/4]",
+    "ccccc;0MNc.ccc.xMMd;ccccccccccccccc;      Font: Cantarell (11pt) [GTK2/3/4]",
+    "cccccc;dNMWXXXWM0:;cccccccccccccc:,       Cursor: Adwaita (24px)",
+    "cccccccc;.:odl:.;cccccccccccccc:,.        Terminal: GNOME Terminal 3.50.1",
+    "ccccccccccccccccccccccccccccc:'.          Terminal Font: Source Code Pro (10pt)",
+    ":ccccccccccccccccccccccc:;,..             CPU: 11th Gen Intel(R) Core(TM) i7-11z",
+    " ':cccccccccccccccc::;,.                  GPU 1: Intel Iris Xe Graphics @ 1,35 ]",
+    "                                          GPU 2: NVIDIA GeForce GTX 1650 Mobile]",
+    "                                          Memory: 15,32 GiB",
+    "                                          Swap: 8,00 GiB",
+    "                                          Disk (/): 97,64 GiB s",
+    "                                          Locale: en_GB.UTF-8""
+]
+
 const createFetch = () : string[] => {
-    const FastFetch = [
-      "<br>",
-      "            .',;::::;,'.                  l01d@fedora",
-      "        .';:cccccccccccc:;,.              -----------",
-      "     .;cccccccccccccccccccccc;.           OS: Fedora Linux 40 (Workstation Edition)",
-      "   .:cccccccccccccccccccccccccc:.         Host: Prestige 14 A11SCX (REV:1.0)",
-      "  .;ccccccccccccc;.:dddl:.;ccccccc;.      Kernel: Linux 6.9.9-200.fc40.x86_64",
-      " .:ccccccccccccc;OWMKOOXMWd;ccccccc:.     Packages: 2046 (rpm), 3 (flatpak)",
-      ".:ccccccccccccc;KMMc;cc;xMMc;ccccccc:.    Shell: bash 5.2.26",
-      ",cccccccccccccc;MMM.;cc;;WW:;cccccccc,    Display (BOE06DF): 1920x1080 @ 60Hz []",
-      ":cccccccccccccc;MMM.;cccccccccccccccc:    DE: GNOME 46.3.1",
-      ":ccccccc;oxOOOo;MMM000k.;cccccccccccc:    WM: Mutter (Wayland)",
-      "cccccc;0MMKxdd:;MMMkddc.;cccccccccccc;    WM Theme: Adwaita",
-      "ccccc;XMO';cccc;MMM.;cccccccccccccccc'    Theme: Adwaita [GTK2/3/4]",
-      "ccccc;MMo;ccccc;MMW.;ccccccccccccccc;     Icons: Adwaita [GTK2/3/4]",
-      "ccccc;0MNc.ccc.xMMd;ccccccccccccccc;      Font: Cantarell (11pt) [GTK2/3/4]",
-      "cccccc;dNMWXXXWM0:;cccccccccccccc:,       Cursor: Adwaita (24px)",
-      "cccccccc;.:odl:.;cccccccccccccc:,.        Terminal: GNOME Terminal 3.50.1",
-      "ccccccccccccccccccccccccccccc:'.          Terminal Font: Source Code Pro (10pt)",
-      ":ccccccccccccccccccccccc:;,..             CPU: 11th Gen Intel(R) Core(TM) i7-11z",
-      " ':cccccccccccccccc::;,.                  GPU 1: Intel Iris Xe Graphics @ 1,35 ]",
-      "                                          GPU 2: NVIDIA GeForce GTX 1650 Mobile]",
-      "                                          Memory: 15,32 GiB",
-      "                                          Swap: 8,00 GiB",
-      "                                          Disk (/): 97,64 GiB s",
-      "                                          Locale: en_GB.UTF-8",
-      "<br>"
-    ]  
-    
     const fetch : string[] = [];
-    
-    FastFetch.forEach((ele) => {
-      fetch.push(ele);
-    })
-  
+    fetch.push("<br>")
+    command.ascii.forEach((ele) => {
+      let fetchString = "";
+      //this is for the ascii art
+      for (let i = 0; i < ele.length; i++) {
+        if (ele[i] === " ") {
+          fetchString += "&nbsp;";
+        } else {
+          fetchString += ele[i];
+        }
+      }
+      
+      let eleToPush = `<pre>${fetchString}</pre>`;
+      fetch.push(eleToPush);
+    });  
+    fetch.push("<br>");
+    fetch.push("Welcome to WebShell v1.0.0");
+    fetch.push("Type <span class='command'>'help'</span> for a list of all available commands.");
+    fetch.push(`Type <span class='command'>'repo'</span> to view the GitHub repository or click <a href='${command.repoLink}' target='_blank'>here</a>.`);
+    fetch.push("<br>");
     return fetch;
   }
   
-  export const FETCH = createFetch();
+  export const fetch = createFetch();
+  
   
