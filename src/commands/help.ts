@@ -29,6 +29,10 @@ const helpObj = {
     [
       "'fastfetch'",
       "Fetch current system info of the website's owner."
+    ],
+    [
+      "'neofetch'",
+      "Yet another, but old one, fetcher. Is it the same?"
     ]
   ],
 }
