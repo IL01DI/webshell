@@ -1,6 +1,4 @@
-const createFetch = () : string[] => {
-    fetch.push("<br>")
-    
+const createFetch = () : string[] => {    
     fetch.push("<br>");
     fetch.push("             .',;::::;,'.                 l01d@fedora");
     fetch.push("         .';:cccccccccccc:;,.             -----------");
