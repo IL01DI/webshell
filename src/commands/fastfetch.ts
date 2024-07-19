@@ -1,4 +1,4 @@
-ascii : [
+ascii = [
     "l01d@fedora:~$ fastfetch",
     "             .',;::::;,'.                 l01d@fedora",
     "         .';:cccccccccccc:;,.             -----------",
@@ -29,7 +29,7 @@ ascii : [
 const createFetch = () : string[] => {
     const fetch : string[] = [];
     fetch.push("<br>")
-    command.ascii.forEach((ele) => {
+    ascii.forEach((ele) => {
       let fetchString = "";
       //this is for the ascii art
       for (let i = 0; i < ele.length; i++) {
@@ -43,11 +43,6 @@ const createFetch = () : string[] => {
       let eleToPush = `<pre>${fetchString}</pre>`;
       fetch.push(eleToPush);
     });  
-    fetch.push("<br>");
-    fetch.push("Welcome to WebShell v1.0.0");
-    fetch.push("Type <span class='command'>'help'</span> for a list of all available commands.");
-    fetch.push(`Type <span class='command'>'repo'</span> to view the GitHub repository or click <a href='${command.repoLink}' target='_blank'>here</a>.`);
-    fetch.push("<br>");
     return fetch;
   }
   
