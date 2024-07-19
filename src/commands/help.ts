@@ -25,6 +25,10 @@ const helpObj = {
     [
       "'clear'",
       "Clear the terminal."
+    ],
+    [
+      "'fastfetch'",
+      "Fetch current system info of the website's owner."
     ]
   ],
 }
