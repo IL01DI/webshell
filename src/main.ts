@@ -5,6 +5,7 @@ import { ABOUT } from "./commands/about"
 import { DEFAULT } from "./commands/default";
 import { PROJECTS } from "./commands/projects";
 import { createWhoami } from "./commands/whoami";
+import { FASTFETCH } from "./commands/fastfetch";
 
 //mutWriteLines gets deleted and reassigned
 let mutWriteLines = document.getElementById("write-lines");
@@ -28,7 +29,7 @@ const PRE_USER = document.getElementById("pre-user");
 const HOST = document.getElementById("host");
 const USER = document.getElementById("user");
 const PROMPT = document.getElementById("prompt");
-const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear"];
+const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear", "fastfetch"];
 const HISTORY : string[] = [];
 const SUDO_PASSWORD = command.password;
 const REPO_LINK = command.repoLink;
@@ -279,6 +280,10 @@ function commandHandler(input : string) {
         writeLines(["Permission not granted.", "<br>"]);
       }
       break;
+    case 'fastfetch': {
+      writeLines(FETCH)
+      break;
+    }
     default:
       if(bareMode) {
         writeLines(["type 'help'", "<br>"])
