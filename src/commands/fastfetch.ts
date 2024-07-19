@@ -1,3 +1,5 @@
+import command from '../../fetch.json' assert {type: 'json'};
+
 ascii : [
     "l01d@fedora:~$ fastfetch",
     "             .',;::::;,'.                 l01d@fedora",
@@ -29,7 +31,7 @@ ascii : [
 const createFetch = () : string[] => {
     const fetch : string[] = [];
     fetch.push("<br>")
-    ascii.forEach((ele) => {
+    command.ascii.forEach((ele) => {
       let fetchString = "";
       //this is for the ascii art
       for (let i = 0; i < ele.length; i++) {
