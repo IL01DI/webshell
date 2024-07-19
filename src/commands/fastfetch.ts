@@ -3,7 +3,7 @@ import command from '../../fetch.json' assert {type: 'json'};
 const createFetch = () : string[] => {
     const fetch : string[] = [];
     fetch.push("<br>")
-    command.ascii.forEach((ele) => {
+    command.pc.forEach((ele) => {
       let fetchString = "";
       //this is for the ascii art
       for (let i = 0; i < ele.length; i++) {
